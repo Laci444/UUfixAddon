@@ -1,4 +1,12 @@
 options:
-  auto-update: true
-  # set this to true, if you want to transfer crafts from LiteXpansion
-  copy-from-litex: false
+  auto-update: true # does nothing
+
+# recipes.yml syntax!!
+#DIAMOND: only vanilla Materials (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html)
+#  name: '' leaving empty means vanilla name
+#  amount: 3 how many items will be crafted
+#  craft:
+#    - 'o, x, o'
+#    - 'x, o, x'
+#    - 'o, x, o'
+# "o" means nothing, "x" means UU-matter
