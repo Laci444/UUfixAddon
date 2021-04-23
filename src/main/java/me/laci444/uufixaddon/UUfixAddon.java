@@ -31,9 +31,10 @@ public class UUfixAddon extends JavaPlugin implements SlimefunAddon {
         NamespacedKey categoryID = new NamespacedKey(this, "main_category");
 
         Category main_category = new Category(categoryID, categoryItem);
+        main_category.register(this);
 
         // Define item params
-        SlimefunItemStack testSfItem = new SlimefunItemStack("testSfItem", Material.DIAMOND, "&bTeszt gyémánt", "", "&aHali, itt teszt gyémánt jelentkezik!");
+        SlimefunItemStack testSfItem = new SlimefunItemStack("TEST_ITEM", Material.DIAMOND, "&bTeszt gyémánt", "", "&aHali, itt teszt gyémánt jelentkezik!");
         ItemStack[] testRecipe = { new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK) };
         // Create test item
         SlimefunItem testItem = new SlimefunItem(main_category, testSfItem, RecipeType.ENHANCED_CRAFTING_TABLE, testRecipe, new SlimefunItemStack(testSfItem, 2));

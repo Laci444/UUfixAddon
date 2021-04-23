@@ -1,12 +1,4 @@
 options:
   auto-update: true
-
-recipes:
-  recipe1:
-    name: 'Cool name'
-    item: 'minecraft:diamond'
-    lore:
-      - ''
-      - 'This is a cool diamond'
-    craft:
-      - ''
+  # set this to true, if you want to transfer crafts from LiteXpansion
+  copy-from-litex: false
