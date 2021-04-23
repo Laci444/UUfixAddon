@@ -1,6 +1,7 @@
 package me.laci444.uufixaddon;
 
 import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
+import io.github.thebusybiscuit.slimefun4.implementation.items.VanillaItem;
 import me.laci444.uufixaddon.UUrecipes.UUrecipes;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -14,6 +15,8 @@ import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
 import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
 import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 import me.mrCookieSlime.Slimefun.cscorelib2.item.CustomItem;
+
+import java.io.File;
 
 public class UUfixAddon extends JavaPlugin implements SlimefunAddon {
 
@@ -33,14 +36,16 @@ public class UUfixAddon extends JavaPlugin implements SlimefunAddon {
         Category main_category = new Category(categoryID, categoryItem);
         main_category.register(this);
 
-        // Define item params
-        SlimefunItemStack testSfItem = new SlimefunItemStack("TEST_ITEM", Material.DIAMOND, "&bTeszt gyémánt", "", "&aHali, itt teszt gyémánt jelentkezik!");
+        // Define recipe
         ItemStack[] testRecipe = { new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK), null, new ItemStack(Material.STICK) };
         // Create test item
-        SlimefunItem testItem = new SlimefunItem(main_category, testSfItem, RecipeType.ENHANCED_CRAFTING_TABLE, testRecipe, new SlimefunItemStack(testSfItem, 2));
-        testItem.setUseableInWorkbench(true).register(this);
+        VanillaItem testItem = new VanillaItem(main_category, new ItemStack(Material.DIAMOND, 2), "DIAMOND", RecipeType.ENHANCED_CRAFTING_TABLE, testRecipe);
+        testItem.register(this);
 
-        UUrecipes recipes = new UUrecipes(this, cfg);
+        File RecipesFile = new File(this.getDataFolder(), "recipes.yml");
+        Config RecipesConfig = new Config(RecipesFile);
+
+        UUrecipes recipes = new UUrecipes(RecipesConfig);
 
     }
 
