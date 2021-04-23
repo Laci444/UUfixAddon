@@ -1,2 +1,12 @@
 options:
   auto-update: true
+
+recipes:
+  recipe1:
+    name: 'Cool name'
+    item: 'minecraft:diamond'
+    lore:
+      - ''
+      - 'This is a cool diamond'
+    craft:
+      - ''
