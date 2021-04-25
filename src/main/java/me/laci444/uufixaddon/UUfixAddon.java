@@ -17,10 +17,6 @@ public class UUfixAddon extends JavaPlugin implements SlimefunAddon {
             saveDefaultConfig();
         }
 
-        Config cfg = new Config(this);
-        if (cfg.getBoolean("options.auto-update")){
-            new GitHubBuildsUpdater(this, getFile(), "Laci444/UUfixAddon/master").start();
-        }
 
         File recipesFile = new File(this.getDataFolder(), "recipes.yml");
         if (!recipesFile.exists()){
