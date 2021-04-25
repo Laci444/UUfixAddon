@@ -1,2 +1,2 @@
-# Slimefun4 Addon
-Trying to fix UU-matter recipes in SlimeFuns LiteXpansion addon.
+# UUfixAddon
+Using LiteXpansion's UU-matter to create recipes that can be autocrafted.
