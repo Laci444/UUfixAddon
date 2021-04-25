@@ -1,0 +1,232 @@
+#DIAMOND: vanilla Materials (https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html) or SlimefunItem IDs
+#  name: 'Super duper UU diamond' leaving empty means vanilla name
+#  amount: 3 how many items will be crafted
+#  craft:
+#    - 'o, x, o'
+#    - 'x, o, x'
+#    - 'o, x, o'
+# "o" means nothing, "x" means UU-matter
+COAL:
+  name: ''
+  amount: 20
+  craft:
+    - 'o, o, x'
+    - 'x, o, o'
+    - 'o, o, x'
+DIAMOND:
+  name: ''
+  amount: 1
+  craft:
+    - 'x, x, x'
+    - 'x, x, x'
+    - 'x, x, x'
+GOLD_ORE:
+  name: ''
+  amount: 2
+  craft:
+    - 'o, x, o'
+    - 'x, x, x'
+    - 'o, x, o'
+IRON_ORE:
+  name: ''
+  amount: 2
+  craft:
+    - 'x, o, x'
+    - 'o, x, o'
+    - 'x, o, x'
+LAPIS_LAZULI:
+  name: ''
+  amount: 9
+  craft:
+    - 'o, x, o'
+    - 'o, x, o'
+    - 'o, x, o'
+REDSTONE:
+  name: ''
+  amount: 24
+  craft:
+    - 'o, o, o'
+    - 'o, x, o'
+    - 'x, x, x'
+CHISELED_STONE_BRICKS:
+  name: ''
+  amount: 48
+  craft:
+    - 'x, x, o'
+    - 'x, x, o'
+    - 'x, o, o'
+CLAY_BALL:
+  name: ''
+  amount: 48
+  craft:
+    - 'x, x, o'
+    - 'x, o, o'
+    - 'x, x, o'
+GLASS:
+  name: ''
+  amount: 32
+  craft:
+    - 'o, x, o'
+    - 'x, o, x'
+    - 'o, x, o'
+GLOWSTONE:
+  name: ''
+  amount: 8
+  craft:
+    - 'o, x, o'
+    - 'x, o, x'
+    - 'x, x, x'
+GRASS_BLOCK:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, o'
+    - 'x, o, o'
+    - 'x, o, o'
+MOSSY_COBBLESTONE:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, o'
+    - 'o, x, o'
+    - 'x, o, x'
+MYCELIUM:
+  name: ''
+  amount: 24
+  craft:
+    - 'o, o, o'
+    - 'x, o, x'
+    - 'x, x, x'
+NETHERRACK:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, x'
+    - 'o, x, o'
+    - 'x, o, o'
+OBSIDIAN:
+  name: ''
+  amount: 12
+  craft:
+    - 'x, o, x'
+    - 'x, o, x'
+    - 'o, o, o'
+SANDSTONE:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, o'
+    - 'o, o, o'
+    - 'o, x, o'
+SNOW_BLOCK:
+  name: ''
+  amount: 4
+  craft:
+    - 'x, o, x'
+    - 'o, o, o'
+    - 'o, o, o'
+STONE:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, o'
+    - 'o, x, o'
+    - 'o, o, o'
+OAK_LOG:
+  name: ''
+  amount: 8
+  craft:
+    - 'o, x, o'
+    - 'o, o, o'
+    - 'o, o, o'
+WHITE_WOOL:
+  name: ''
+  amount: 12
+  craft:
+    - 'x, o, x'
+    - 'o, o, o'
+    - 'o, x, o'
+BONE:
+  name: ''
+  amount: 32
+  craft:
+    - 'x, o, o'
+    - 'x, x, o'
+    - 'x, o, o'
+CACTUS:
+  name: ''
+  amount: 48
+  craft:
+    - 'o, x, o'
+    - 'x, x, x'
+    - 'x, o, x'
+COCOA_BEANS:
+  name: ''
+  amount: 32
+  craft:
+    - 'x, x, o'
+    - 'o, o, x'
+    - 'x, x, o'
+FEATHER:
+  name: ''
+  amount: 32
+  craft:
+    - 'o, x, o'
+    - 'o, x, o'
+    - 'x, o, x'
+FLINT:
+  name: ''
+  amount: 32
+  craft:
+    - 'o, x, o'
+    - 'x, x, o'
+    - 'x, x, o'
+GUNPOWDER:
+  name: ''
+  amount: 15
+  craft:
+    - 'x, x, x'
+    - 'x, o, o'
+    - 'x, x, x'
+INK_SAC:
+  name: ''
+  amount: 48
+  craft:
+    - 'x, x, o'
+    - 'x, x, o'
+    - 'x, o, o'
+LAVA_BUCKET:
+  name: ''
+  amount: 1
+  craft:
+    - 'o, o, x'
+    - 'o, x, o'
+    - 'o, x, o'
+WATER_BUCKET:
+  name: ''
+  amount: 1
+  craft:
+    - 'o, o, o'
+    - 'o, x, o'
+    - 'o, x, o'
+SNOWBALL:
+  name: ''
+  amount: 16
+  craft:
+    - 'o, o, x'
+    - 'o, x, o'
+    - 'o, x, o'
+SUGAR_CANE:
+  name: ''
+  amount: 48
+  craft:
+    - 'x, o, x'
+    - 'x, o, x'
+    - 'x, o, x'
+VINE:
+  name: ''
+  amount: 48
+  craft:
+    - 'x, o, o'
+    - 'x, o, o'
+    - 'x, o, o'
