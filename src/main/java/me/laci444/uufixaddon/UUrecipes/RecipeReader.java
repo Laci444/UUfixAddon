@@ -1,15 +1,14 @@
 package me.laci444.uufixaddon.UUrecipes;
 
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import me.laci444.uufixaddon.UUfixAddon;
-import me.mrCookieSlime.Slimefun.Objects.SlimefunItem.SlimefunItem;
-import me.mrCookieSlime.Slimefun.api.SlimefunItemStack;
-import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
@@ -24,7 +23,7 @@ public class RecipeReader {
                 this.item = new SlimefunItemStack(item, Objects.requireNonNull(Material.getMaterial(item)), name);
             } catch (NullPointerException e){
                 try {
-                    this.item = new SlimefunItemStack(item, Objects.requireNonNull(SlimefunItem.getByID(item)).getItem(), name);
+                    this.item = new SlimefunItemStack(item, Objects.requireNonNull(SlimefunItem.getById(item)).getItem(), name);
                 } catch (NullPointerException ex){
                     Bukkit.getLogger().warning("Can't find " + item);
                     this.isFailed = true;
@@ -42,7 +41,7 @@ public class RecipeReader {
         this.recipesConfig = recipesConfig;
 
         try{
-            this.UU_MATTER = SlimefunItem.getByID("UU_MATTER").getItem();
+            this.UU_MATTER = SlimefunItem.getById("UU_MATTER").getItem();
         } catch (NullPointerException e){
             Bukkit.getLogger().warning("Can't fing UU-matter! Check the log for more details on LiteXpansion or contact with its authors.");
             return;

@@ -1,11 +1,9 @@
 package me.laci444.uufixaddon;
 
-import me.laci444.uufixaddon.UUrecipes.RecipeReader;
-import me.mrCookieSlime.Slimefun.cscorelib2.updater.GitHubBuildsUpdater;
-import org.bukkit.plugin.java.JavaPlugin;
-
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
-import me.mrCookieSlime.Slimefun.cscorelib2.config.Config;
+import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import me.laci444.uufixaddon.UUrecipes.RecipeReader;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import java.io.File;
 
